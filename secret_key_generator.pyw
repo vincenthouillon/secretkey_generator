@@ -9,6 +9,7 @@ date = datetime.now()
 
 PRIMARY_COLOR = '#e74c3c'
 SECONDARY_COLOR = '#c0392b'
+FONT_COLOR = 'white'
 
 
 def generate_flask():
@@ -34,10 +35,11 @@ title = Label(content,
               text='Secret Key Generator',
               font=('courrier', 20),
               bg=PRIMARY_COLOR,
-              fg='white')
+              fg=FONT_COLOR)
 title.pack(pady=20)
 input_user = Entry(content,
-                   width=74)
+                   width=74, 
+                   relief='flat')
 input_user.pack()
 
 btn_flask = Button(content, text='Generate a secret key for Flask',
@@ -65,7 +67,7 @@ footer = Frame(window, bg=SECONDARY_COLOR)
 
 lbl_copyright = Label(footer, text=(f'Vincent HOUILLON - {date.year}'),
                       bg=SECONDARY_COLOR,
-                      fg='white',
+                      fg=FONT_COLOR,
                       font=('courrier', 7, 'italic'))
 lbl_copyright.pack(side=LEFT, padx=5)
 
