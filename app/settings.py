@@ -1,0 +1,6 @@
+PRIMARY_COLOR = '#e74c3c'
+SECONDARY_COLOR = '#494949'
+BG_COLOR = 'white'
+FONT = 'Segoe UI'
+FG_COLOR = 'black'
+FG_MONO = 'white'
