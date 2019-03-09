@@ -1,0 +1,17 @@
+{
+    "user_settings": {
+        "theme": "light",
+        "accent_color": "#e74c3c"
+    },
+    "light_theme": {
+        "background": "white",
+        "foreground": "black",
+        "copyright": "#494949"
+    },
+    "dark_theme": {
+        "background": "black",
+        "foreground": "white",
+        "copyright": "#c8d6e5"
+    }
+    
+}
