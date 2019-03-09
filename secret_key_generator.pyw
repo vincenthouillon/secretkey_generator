@@ -72,20 +72,20 @@ class SecretKeyGenerator:
 
         btn_flask = Button(pw_form, text='Generate a secret key for Flask',
                            width=26,
-                           relief='flat',
+                           relief=FLAT,
                            command=self.generate_flask,
                            bg=self.settings['ACCENT_COLOR'])
         btn_flask.pack(pady=10, side=LEFT)
 
         btn_django = Button(pw_form, text='Generate a secret key for Django',
                             width=26,
-                            relief='flat',
+                            relief=FLAT,
                             bg=self.settings['ACCENT_COLOR'],
                             command=self.generate_django)
         btn_django.pack(padx=14, pady=10, side=LEFT)
 
         btn_clipboard = Button(pw_form,
-                               relief='flat',
+                               relief=FLAT,
                                bg=self.settings['ACCENT_COLOR'],
                                command=self.clipboard)
         
@@ -101,7 +101,7 @@ class SecretKeyGenerator:
         lbl_copyright.pack(side=LEFT, padx=5)
 
         btn_border = Frame(pw_footer,
-                           highlightbackground=self.settings['BG_COLOR'],
+                           highlightbackground=self.settings['ACCENT_COLOR'],
                            highlightcolor=self.settings['ACCENT_COLOR'],
                            highlightthickness=2,
                            bg=self.settings['BG_COLOR'],
@@ -111,9 +111,9 @@ class SecretKeyGenerator:
                           text='Quit',
                           width=24,
                           height=1,
-                          relief='flat',
+                          relief=FLAT,
                           border=0,
-                          bg=self.settings['ACCENT_COLOR'],
+                          bg=self.settings['BG_COLOR'],
                           highlightbackground=self.settings['BG_COLOR'],
                           activebackground=self.settings['ACCENT_COLOR'],
                           command=quit)
