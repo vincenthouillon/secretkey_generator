@@ -1,6 +1,6 @@
 {
     "user_settings": {
-        "theme": "light",
+        "mode": "light",
         "accent_color": "#e74c3c"
     },
     "light_theme": {
@@ -13,5 +13,4 @@
         "foreground": "white",
         "copyright": "#c8d6e5"
     }
-    
 }
